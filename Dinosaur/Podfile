@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+swift_version = "3.0"
+
+target 'Dinosaur' do
+  use_frameworks!
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+  pod 'SwiftyJSON'
+  pod "PromiseKit", "~> 4.0"
+end

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoldersCollectionViewCell" customModule="Dinosaur" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="292" height="292"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="292" height="292"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1i-dU-1pg">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="60"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wzR-xd-riG">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="gr0-bs-ZHc"/>
+                                    <constraint firstAttribute="height" constant="60" id="lxi-yg-xhx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGD-RF-FeQ">
+                                <rect key="frame" x="68" y="8" width="104" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partido" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qf-yd-sDY">
+                                <rect key="frame" x="68" y="31" width="104" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cyan="0.51623301373587716" magenta="0.0" yellow="0.33558491865793866" black="0.085348886986301373" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wzR-xd-riG" firstAttribute="top" secondItem="A1i-dU-1pg" secondAttribute="top" id="4CI-Hf-S2S"/>
+                            <constraint firstItem="wzR-xd-riG" firstAttribute="leading" secondItem="A1i-dU-1pg" secondAttribute="leading" id="8Ln-vf-cJC"/>
+                            <constraint firstAttribute="width" constant="180" id="RBd-L2-8b8"/>
+                            <constraint firstItem="1qf-yd-sDY" firstAttribute="leading" secondItem="wzR-xd-riG" secondAttribute="trailing" constant="8" id="aBU-Im-gQo"/>
+                            <constraint firstAttribute="trailing" secondItem="TGD-RF-FeQ" secondAttribute="trailing" constant="8" id="aZG-hW-rtZ"/>
+                            <constraint firstAttribute="trailing" secondItem="1qf-yd-sDY" secondAttribute="trailing" constant="8" id="d9C-PD-waa"/>
+                            <constraint firstAttribute="height" constant="60" id="dfm-vW-rkU"/>
+                            <constraint firstItem="1qf-yd-sDY" firstAttribute="top" secondItem="TGD-RF-FeQ" secondAttribute="bottom" constant="6" id="f6v-vE-j5D"/>
+                            <constraint firstItem="TGD-RF-FeQ" firstAttribute="top" secondItem="A1i-dU-1pg" secondAttribute="top" constant="8" id="qkE-Zn-Bx3"/>
+                            <constraint firstItem="TGD-RF-FeQ" firstAttribute="leading" secondItem="wzR-xd-riG" secondAttribute="trailing" constant="8" id="w9F-Mu-4kS"/>
+                        </constraints>
+                    </view>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ts0-8t-0XZ">
+                        <rect key="frame" x="0.0" y="60" width="292" height="232"/>
+                        <color key="backgroundColor" red="0.43572443723678589" green="0.70627480745315552" blue="0.62867897748947144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </scrollView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ts0-8t-0XZ" secondAttribute="bottom" id="A3c-pw-Uk8"/>
+                <constraint firstItem="Ts0-8t-0XZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WZz-Lc-NIi"/>
+                <constraint firstItem="A1i-dU-1pg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kUP-ie-waM"/>
+                <constraint firstItem="Ts0-8t-0XZ" firstAttribute="top" secondItem="A1i-dU-1pg" secondAttribute="bottom" id="qHW-xK-MYS"/>
+                <constraint firstItem="A1i-dU-1pg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qrl-Ri-KP3"/>
+                <constraint firstAttribute="trailing" secondItem="Ts0-8t-0XZ" secondAttribute="trailing" id="s8U-6V-tlx"/>
+            </constraints>
+            <size key="customSize" width="292" height="292"/>
+            <connections>
+                <outlet property="name" destination="TGD-RF-FeQ" id="LtT-XI-RmR"/>
+                <outlet property="party" destination="1qf-yd-sDY" id="hi4-Ze-wyh"/>
+                <outlet property="thumbnail" destination="wzR-xd-riG" id="Hto-ID-7dQ"/>
+            </connections>
+            <point key="canvasLocation" x="210" y="161"/>
+        </collectionViewCell>
+    </objects>
+</document>
